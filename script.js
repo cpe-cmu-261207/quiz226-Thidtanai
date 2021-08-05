@@ -6,6 +6,9 @@ const color = document.querySelector('#color')
 
 // define more constants and variables here
 const resetButton = document.querySelector("#reset")
+const searchButton = document.querySelector("#search")
+const textLorem = document.querySelector("#text")
+let textSplit = textLorem.innerHTML.split(" ")
 let id = 630610741
 let detect = true
 const oldAuthor = "630610741 THIDTANAI KAEWPHET"
@@ -28,5 +31,11 @@ btn_toggle.onclick = () => {
 resetButton.onclick = () =>  {
   length.value = 5
   color.value = "#FF0000"
+  textLorem.style = "color:black;"
+}
+
+searchButton.onclick = () => {
+  textLorem.style = "color:red"
+
 }
 
