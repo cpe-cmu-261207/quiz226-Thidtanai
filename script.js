@@ -5,9 +5,22 @@ const length = document.getElementById('length')
 const color = document.querySelector('#color')
 
 // define more constants and variables here
+let id = 630610741
+let detect = true
+const oldAuthor = "630610741 THIDTANAI KAEWPHET"
 
 btn_toggle.onclick = () => {
   // your code here
+  if(detect){
+    author.innerHTML = parseInt(id) + parseInt(length.value)
+    btn_toggle.innerHTML = "Show Author"
+    detect = false
+  }else {
+    author.innerHTML = oldAuthor
+    btn_toggle.innerHTML = "Show Calculation"
+    detect = true
+  }
+
 }
 
 // more codes for Search and Reset buttons here
